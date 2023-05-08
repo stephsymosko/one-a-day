@@ -1,11 +1,12 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RouterModule } from '@angular/router';
+import { ProductAlertsComponent} from '@stephsymosko/libs/angular-app-components';
 
 @NgModule({
   declarations: [AppComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent],

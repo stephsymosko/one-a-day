@@ -120,6 +120,31 @@
           }
         }
       }
+    },
+    "libs-angular-app-components": {
+      "projectType": "library",
+      "root": "libs/angular-app-components",
+      "sourceRoot": "libs/angular-app-components/src",
+      "prefix": "stephsymosko",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/angular-app-components"],
+          "options": {
+            "jestConfig": "libs/angular-app-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/angular-app-components/src/**/*.ts",
+              "libs/angular-app-components/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
@@ -147,7 +172,8 @@
     "@nrwl/angular:library": {
       "style": "scss",
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "strict": false
     },
     "@nrwl/angular:component": {
       "style": "scss"
