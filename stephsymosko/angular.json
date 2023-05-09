@@ -145,6 +145,31 @@
           }
         }
       }
+    },
+    "libs-data-access": {
+      "projectType": "library",
+      "root": "libs/libs/data-access",
+      "sourceRoot": "libs/libs/data-access/src",
+      "prefix": "stephsymosko",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/libs/data-access"],
+          "options": {
+            "jestConfig": "libs/libs/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/libs/data-access/src/**/*.ts",
+              "libs/libs/data-access/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

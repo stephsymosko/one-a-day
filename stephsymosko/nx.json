@@ -37,6 +37,9 @@
     },
     "libs-angular-app-components": {
       "tags": []
+    },
+    "libs-data-access": {
+      "tags": []
     }
   }
 }

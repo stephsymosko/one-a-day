@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "../../libs/data-access/src/lib/simply-wreaths-products.ts"],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

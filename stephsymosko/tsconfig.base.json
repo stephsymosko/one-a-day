@@ -17,7 +17,8 @@
     "paths": {
       "@stephsymosko/libs/angular-app-components": [
         "libs/angular-app-components/src/index.ts"
-      ]
+      ],
+      "@stephsymosko/libs/data-access": ["libs/libs/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

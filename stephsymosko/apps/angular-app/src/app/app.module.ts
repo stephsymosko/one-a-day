@@ -7,14 +7,16 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { RouterModule } from '@angular/router';
 import { ProductAlertsComponent} from '@stephsymosko/libs/angular-app-components';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent],
+  declarations: [AppComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent, CartComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent}
+      { path: 'products/:productId', component: ProductDetailsComponent},
+      { path: 'cart', component: CartComponent}
     ])
   ],
   providers: [],
