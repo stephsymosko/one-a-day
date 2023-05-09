@@ -1,4 +1,4 @@
-import { products } from '../../../../../libs/data-access/src/lib/simply-wreaths-products';
+import { products } from '@stephsymosko/libs/data-access';
 import { Component } from '@angular/core';
 
 @Component({

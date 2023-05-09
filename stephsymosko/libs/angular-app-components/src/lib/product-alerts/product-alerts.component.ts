@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from '../../../../data-access/src/lib/simply-wreaths-products';
+import { Product } from '@stephsymosko/libs/data-access';
 
 @Component({
   selector: 'stephsymosko-product-alerts',

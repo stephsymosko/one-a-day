@@ -1,2 +1,4 @@
-export * from './lib/libs-angular-app-components.module';
+
 export * from './lib/product-alerts/product-alerts.component';
+export * from './lib/top-bar/top-bar.component';
+

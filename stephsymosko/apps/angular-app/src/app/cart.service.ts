@@ -1,4 +1,4 @@
-import { Product } from '../../../../libs/data-access/src/lib/simply-wreaths-products';
+import { Product } from '@stephsymosko/libs/data-access';
 import { Injectable } from '@angular/core';
 
 

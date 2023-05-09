@@ -148,15 +148,15 @@
     },
     "libs-data-access": {
       "projectType": "library",
-      "root": "libs/libs/data-access",
-      "sourceRoot": "libs/libs/data-access/src",
+      "root": "libs/data-access",
+      "sourceRoot": "libs/data-access/src",
       "prefix": "stephsymosko",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/libs/data-access"],
+          "outputs": ["coverage/libs/data-access"],
           "options": {
-            "jestConfig": "libs/libs/data-access/jest.config.js",
+            "jestConfig": "libs/data-access/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -164,8 +164,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/libs/data-access/src/**/*.ts",
-              "libs/libs/data-access/src/**/*.html"
+              "libs/data-access/src/**/*.ts",
+              "libs/data-access/src/**/*.html"
             ]
           }
         }

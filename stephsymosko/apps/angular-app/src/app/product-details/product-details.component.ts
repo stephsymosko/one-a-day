@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Product, products } from '../../../../../libs/data-access/src/lib/simply-wreaths-products';
+import { Product, products } from '@stephsymosko/libs/data-access';
 import { CartService } from '../cart.service';
 
 
